@@ -1,13 +1,12 @@
 /**
  * @author sofia.velasquez,dsf
  */
-import java.util.SinglyLinkedList;
-
-public class stack_<T> implements IStack<T>
+import structure5.SinglyLinkedList;
+public class Stack_lista<T> implements IStack<T>
 { 
     private SinglyLinkedList<T> lista;
 
-    public Stack() {
+    public Stack_lista() {
         lista = new SinglyLinkedList<T>();
     }
 

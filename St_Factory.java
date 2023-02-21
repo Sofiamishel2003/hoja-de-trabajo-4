@@ -1,5 +1,5 @@
 public class St_Factory {
-    public static <T> IStack<T> make_stack (int e) {
+    public static <T> IStack<T> make_stack(int e) {
         switch (e) {
             case 1: //Vector
                 return new Stack_vector<T>();
@@ -10,7 +10,7 @@ public class St_Factory {
             case 4: //Lista doblemente encadenada
                 return new Stack_doble<T>();
             default:
-                System.out.println("Dato ingresado Invalido");
+            throw new IllegalArgumentException("Dato invalido");
             }
         }
     }

@@ -4,11 +4,11 @@
  */
 import java.util.Vector;
 
-public class stack_<T> implements IStack<T>
+public class Stack_vector<T> implements IStack<T>
 { 
     private Vector<T> vec;
     
-    public Stack() {
+    public Stack_vector() {
         vec = new Vector<T>();
     }
 

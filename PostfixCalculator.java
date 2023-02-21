@@ -6,23 +6,42 @@
 //  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
 // 
 //
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 public class PostfixCalculator implements IPostfixCalculator {
 
-    
+    private static PostfixCalculator instance;
+    private IStack stack;
     /** 
      * @param operandos Se ingresa un tipo de objeto Istack con los operandos para poder comprobar que el count sea 1
      * @return boolean
      */
-    @Override
-	public boolean isOneItem(IStack operandos)
+    PostfixCalculator(IStack stack) {
+        this.stack = stack;
+    }
+
+	public boolean isOneItem (IStack operandos)
     {
         return operandos.count() == 1;
     }
-    
+    public static PostfixCalculator getInstance(IStack stack) {
+        if (instance == null) {
+            instance = new PostfixCalculator(stack);
+        }
+        System.out.println("La instancia es:"+instance);
+        return instance;
+    }
+    public boolean instance()
+    {
+        if (instance==null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     /** 
      * @param a se ingresan dos dígitos para poder sumar y retorna la suma de los dos dígitos
      * @param b 

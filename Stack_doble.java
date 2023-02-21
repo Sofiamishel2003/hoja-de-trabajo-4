@@ -1,14 +1,14 @@
 /**
  * @author sofia.velasquez,dsf
  */
-import java.util.DoublyLinkedList;
-
-public class stack_<T> implements IStack<T>
+import java.util.EmptyStackException;
+import structure5.DoublyLinkedList;
+public class Stack_doble<T> implements IStack<T>
 { 
     private DoublyLinkedList<T> lista;
 
-    public Stack() {
-        lista = new ArrayList<T>();
+    public Stack_doble() {
+        lista = new DoublyLinkedList<T>();
     }
 
     public int count() {

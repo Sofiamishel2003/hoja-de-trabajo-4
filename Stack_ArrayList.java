@@ -3,13 +3,12 @@
  * @author sofia.velasquez,dsf
  */
 import java.util.ArrayList;
-import java.util.List;
 
-public class stack_<T> implements IStack<T>
+public class Stack_ArrayList<T> implements IStack<T>
 { 
     private ArrayList<T> lista;
 
-    public Stack() {
+    public Stack_ArrayList() {
         lista = new ArrayList<T>();
     }
 
