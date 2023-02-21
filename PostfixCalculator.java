@@ -13,10 +13,11 @@ public class PostfixCalculator implements IPostfixCalculator {
     private static PostfixCalculator instance;
     private IStack stack;
     /** 
+     * @param stack2
      * @param operandos Se ingresa un tipo de objeto Istack con los operandos para poder comprobar que el count sea 1
      * @return boolean
      */
-    PostfixCalculator(IStack stack) {
+    PostfixCalculator(IStack stack2) {
         this.stack = stack;
     }
 

@@ -22,7 +22,6 @@ public class main_calculadora_postfix {
     {
         infix_to_postfix conversor= new infix_to_postfix();
         int opcion=0;
-        boolean bandera=false;
         while(opcion!=2)
         {
             Scanner in = new Scanner(System.in);
