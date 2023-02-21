@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"St_Factory","l":"make_stack(int)"},{"p":"<Unnamed>","c":"St_Factory","l":"St_Factory()","u":"%3Cinit%3E()"}];updateSearchResults();
