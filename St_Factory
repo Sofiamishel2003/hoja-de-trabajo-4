@@ -1,0 +1,16 @@
+public class St_Factory {
+    public static <T> IStack<T> make_stack (String e) {
+        switch (e) {
+            case "1":
+                return new ArrayListStack<T>();
+            case "2":
+                return new VectorStack<T>();
+            case "3":
+                return new SinglyLinkedListStack<T>();
+            case "4":
+                return new DoublyLinkedListStack<T>();
+            default:
+                throw new IllegalArgumentException("Dato ingresado Invalido");
+            }
+        }
+    }
