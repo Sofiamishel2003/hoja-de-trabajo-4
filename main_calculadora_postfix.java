@@ -75,6 +75,8 @@ public class main_calculadora_postfix {
 
     /**
      * @param lista se ingresa una lista con los digitos para que se puedan hacer las operaciones
+     * @param computadorsica es la calculadora postfix del stack
+     * @param operandos es el stack
      * @return int
      */
     public static int calacular (String[] lista, PostfixCalculator computadorsica, IStack<Integer> operandos)
